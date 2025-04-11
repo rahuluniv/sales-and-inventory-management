@@ -80,10 +80,15 @@ WSGI_APPLICATION = 'InventoryMS.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'defaultdb',
+        'USER': 'doadmin',
+        'PASSWORD': 'AVNS_Jj6oIfnJmrYu_NbJ9Wx',
+        'HOST': 'db-postgresql-tor1-61465-do-user-15905826-0.h.db.ondigitalocean.com',
+        'PORT': '25060',
     }
 }
+
 
 
 # Password validation
